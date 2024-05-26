@@ -1,0 +1,40 @@
+Text: You find yourself in a mysterious forest. Do you:
+Options: Explore the forest / Head back where you came from
+Results: You uncover a hidden treasure. / You miss out on an adventure.
+Outcome: Coins +10/End
+Text: A wizard appears and offers you a magical potion. What do you do?
+Options: Accept the potion without asking questions / Ask the wizard about the potion's effects
+Results: You gain the ability to speak with animals. / The wizard appreciates your caution and grants you a magical shield.
+Outcome: MP +10/AC +10
+Text: You come across a locked door in an ancient castle. How do you proceed?
+Options: Search for a key / Try to pick the lock / Look for an alternative route
+Results: You find a hidden passage and bypass the locked door. / The lock is too intricate, and you alert nearby guards. / You discover a secret tunnel that leads you to the other side.
+Outcome: MP +10/AC +10
+Text: A talking cat approaches you and claims to be a guide. What do you do?
+Options: Follow the cat / Ignore the cat and continue on your own
+Results: The cat leads you to a magical realm with untold wonders. / You miss a shortcut and encounter a treacherous path.
+Outcome: Coins +100, End/AC -10|HP -10
+Text: You encounter a fork in the road. Which path do you take?
+Options: Left path / Right path / Explore a hidden trail
+Results: You find a friendly village and receive assistance. / You stumble upon a dangerous swamp, but discover valuable herbs. / The trail leads you to a scenic waterfall and a peaceful campsite.
+Outcome: Coins +50/MP +1/ 
+Text: In a futuristic city, you discover a high-tech device. What is your next move?
+Options: Activate the device / Analyze the device before deciding / Leave the device alone
+Results: You gain access to advanced knowledge and technologies. / You avoid a potential security breach and learn about its purpose. / The city's AI acknowledges your respect for technology and rewards you with credits.
+Outcome: Tech +10/ /Coins +10
+Text: A mysterious portal opens before you. Will you step through it?
+Options: Enter the portal / Stay put and observe
+Results: You find yourself in a parallel dimension with extraordinary experiences. / The portal closes, and you continue your journey in the current dimension.
+Outcome: End/ 
+Text: You meet a group of rebels plotting against an oppressive regime. What role will you play?
+Options: Join the rebellion / Remain neutral / Report the rebels to authorities
+Results: You become a key member, leading to the overthrow of the oppressive regime. / You avoid getting entangled in the conflict, focusing on your own journey. / The authorities reward you, but your actions lead to increased oppression.
+Outcome: End/ /Coins +100
+Text: A wise old sage offers you a riddle. How do you respond?
+Options: Attempt to solve the riddle / Ask for a hint / Decline the challenge
+Results: You impress the sage and gain magical wisdom as a reward. / The sage provides a hint, and you solve the riddle with ease. / The sage respects your decision and imparts a small blessing.
+Outcome: MP +1/ /MP+1
+Text: You discover a hidden cave with an ancient artifact inside. What do you do?
+Options: Take the artifact without hesitation / Investigate the cave further before deciding / Leave the artifact untouched
+Results: The artifact grants you enhanced abilities and protection. / You find a map revealing hidden locations in the world. / The cave collapses behind you, sealing the artifact for future adventurers.
+Outcome: AC +10, MP+5/ Coins +1000, MP +100, End/ 
