@@ -1,0 +1,26 @@
+order=True # To set the sorting to ascending or descending
+def my_disp():
+    global df 
+    l1=list(df) # List of column names as headers 
+    r_set=df.to_numpy().tolist() # Create list of list using rows 
+    trv = ttk.Treeview(my_w, selectmode ='browse',
+                       show='headings',height=10,columns=l1)
+    trv.grid(row=1,column=1,padx=30,pady=20)
+    for col in l1:
+        trv.column(col, width = 100, anchor ='c')
+        trv.heading(col, text =col,command=lambda col=col :my_sort(col))
+
+    ## Adding data to treeview 
+    for dt in r_set:  
+        v=[r for r in dt] # creating a list from each row 
+        trv.insert("",'end',iid=v[0],values=v) # adding row
+def my_sort(col):
+    global df,order 
+    if order:
+        order=False # set ascending value
+    else:
+        order=True
+    df=df.sort_values(by=[col],ascending=order)
+    my_disp() # refresh the Treeview 
+my_disp()
+my_w.mainloop()
