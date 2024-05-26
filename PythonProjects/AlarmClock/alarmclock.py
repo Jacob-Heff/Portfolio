@@ -5,7 +5,9 @@
 
 from playsound import playsound
 import time
+import os
 
+ALARM = os.path.dirname(__file__)+"/alarm.mp3"
 CLEAR = "\033[2J"
 CLEAR_AND_RETURN = "\033[H"
 
@@ -22,8 +24,9 @@ def alarm(seconds):
         seconds_left = time_left % 60
         print(f"{CLEAR_AND_RETURN}Alarm will sound in: {minutes_left:02d}:{seconds_left:02d}")
         
-    playsound("AlarmClock/alarm.mp3")
+    playsound(ALARM)
         
+print("Enter the amount of time to wait before the alarm sounds.")
 minutes = int(input("How many minutes to wait: "))
 seconds = int(input("How many seconds to wait: "))
 total_seconds = (minutes * 60) + seconds
