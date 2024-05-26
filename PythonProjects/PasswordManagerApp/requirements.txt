@@ -1,0 +1,3 @@
+cryptography==42.0.7
+PySimpleGUI==5.0.4
+PySimpleGUI==5.0.4

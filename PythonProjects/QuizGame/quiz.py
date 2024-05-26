@@ -3,16 +3,18 @@
 # Resource: github.com/techwithtim/5-Python-Projects-For-Beginners
 
 import random
+import os
 
+PATH = os.path.dirname(__file__)
 TOTAL_QUESTIONS = 9
 
 def selectQuestions():
     # Read questions from the text file
-    with open('questions.txt', 'r') as file:
+    with open(PATH+'/questions.txt', 'r') as file:
         questions = file.read().splitlines()
 
     # Read answers from the text file
-    with open('answers.txt', 'r') as file:
+    with open(PATH+'/answers.txt', 'r') as file:
         answers = file.read().splitlines()
 
     # Create a list of tuples, each containing a question and its answer
@@ -39,13 +41,6 @@ def playQuiz(questions):
 
 
 print("Welcome to my computer quiz!")
-
-playing = input("Do you want to play? ")
-
-if playing.lower() != "yes":
-    quit()
-
-print("Okay! Let's play :)")
 
 # Get randomly selected questions
 selected_questions = selectQuestions()

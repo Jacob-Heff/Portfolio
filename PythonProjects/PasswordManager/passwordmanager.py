@@ -31,7 +31,7 @@ def mstr_pass():
     mst_pwd = input("Create a Master Password: ")
 
     with open('passwords.txt', 'wb') as f:
-        f.write("Password Manager" + "|" + fer.encrypt(mst_pwd.encode()).decode() + "\n")
+        f.write("Password Manager" + "|" + fer.encrypt(mst_pwd.decode()).encode() + "\n")
 
 def check_mstr_pass(mstrpass):
     with open('passwords.txt', 'rb') as f:
